@@ -30,7 +30,7 @@ time.sleep(3)
 driver.switch_to.window(childwindow)
 print("Title of child window:"+driver.title)'''
 
-#Approach-2
+#Approachgit diffgit
 '''for ID in windowIDs:
     driver.switch_to.window(ID)
     print("Title of Browser Windows are:"+driver.title)'''
