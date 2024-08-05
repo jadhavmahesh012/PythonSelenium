@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common import by
 from selenium.webdriver.common.by import By
 
-serv_obj=Service("C:\Mahesh\chromedriver-win64\chromedriver.exe")
+serv_obj=Service("C:/Mahesh/chromedriver-win64/chromedriver.exe")
 driver=webdriver.Chrome(service=serv_obj)
 
 driver.get("https://the-internet.herokuapp.com/javascript_alerts")
@@ -19,6 +19,7 @@ alertwindow=driver.switch_to.alert
 print("Text on alert windoww is:" +alertwindow.text)
 
 alertwindow.send_keys("Mahesh")
+time.sleep(5)
 alertwindow.accept()
 #alertwindow.dismiss()
 

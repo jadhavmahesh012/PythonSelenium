@@ -4,7 +4,9 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-driver=webdriver.Chrome("C:\Mahesh\chromedriver-win64\chromedriver.exe")
+serv_obj=Service("C:/Mahesh/chromedriver-win64/chromedriver.exe")
+driver=webdriver.Chrome(service=serv_obj)
+
 driver.get('https://www.globalsqa.com/demo-site/select-dropdown-menu/')
 driver.maximize_window()
 

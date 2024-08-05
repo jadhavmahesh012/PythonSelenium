@@ -5,12 +5,13 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common import by
 from selenium.webdriver.common.by import By
 
-serv_obj=Service("C:\Mahesh\chromedriver-win64\chromedriver.exe")
+serv_obj=Service("C:/Mahesh/chromedriver-win64/chromedriver.exe")
 driver=webdriver.Chrome(service=serv_obj)
 
 driver.get("https://www.programiz.com/sql/online-compiler/")
-driver.maximize_window()
 time.sleep(2)
+driver.maximize_window()
+
 
 Rows=len(driver.find_elements(By.XPATH,"//div[@class='output-table']//tr"))
 print(Rows)
