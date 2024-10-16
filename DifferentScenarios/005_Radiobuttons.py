@@ -16,6 +16,8 @@ print("Validate visibility of Male radio button before click:",Malebutton.is_dis
 print("Validate visibility of Female radio button before click:",Femalebutton.is_displayed())
 
 Malebutton.click()
+
+time.sleep(3)
 Femalebutton.click()
 print("Validate Male radio button after click:",Malebutton.is_selected())
 print("Validate Female radio button after click:",Femalebutton.is_selected())
@@ -25,5 +27,7 @@ print("Validate Female radio button after click:",Femalebutton.is_enabled())
 
 time.sleep(5)
 
-driver.close()
+
+
+
 

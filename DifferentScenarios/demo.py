@@ -31,7 +31,3 @@ if act_title=="Dashboard / nopCommerce administration1":
 else:
     driver.save_screenshot("../Screenshots/FirstTestCase.png")
     print("login test failed")
-    driver.close()
-
-
-

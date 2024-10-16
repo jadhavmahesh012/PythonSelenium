@@ -22,5 +22,6 @@ Femalebutton.click()
 if (Femalebutton.is_selected()):
     driver.save_screenshot("../Screenshots/FemaleRadiobutton.png")
 
+time.sleep(5)
 
 driver.close()
